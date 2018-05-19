@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#615342">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:digits="1234567890"
+            style="@style/editTextStyle"
+            android:hint="@string/hintIp"
+            android:inputType="number|textCapSentences" 
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+        </EditText>
+
+        <EditText
+            
+            android:id="@+id/key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:hint="@string/hintKey"
+            style="@style/editTextStyle"
+            android:inputType="number|textCapSentences" >
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:button="@drawable/radio_button"
+            android:textColor="@color/color"
+            android:text="@string/CheckBox" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/tvColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textOff="@string/connected"
+        android:textOn="@string/connected" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        >
+
+        <Customs.CustomSeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:progressDrawable="@drawable/progress"
+            android:thumb="@drawable/my"
+             />
+
+       
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp" 
+            >
+
+            <RadioButton
+                android:layout_marginTop="8dp"
+                android:id="@+id/three"
+                android:button="@drawable/radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textColor="@color/color"
+                android:text="@string/ThredSpeed" />
+
+            <RadioButton
+                android:layout_marginTop="8dp"
+                android:id="@+id/second"
+                android:button="@drawable/radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textColor="@color/color"
+                android:text="@string/SecondSpeed" />
+
+            <RadioButton
+                android:layout_marginTop="8dp"
+                android:id="@+id/first"
+                android:button="@drawable/radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color"
+                android:paddingLeft="5dp"
+          		
+                android:text="@string/FirstSpeed" />
+        </RadioGroup>
+
+        <Customs.CustomSeekBar
+            android:id="@+id/sk2"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/seekBar1"
+            android:layout_alignRight="@+id/rg"
+            android:layout_marginRight="25dp"
+            android:progressDrawable="@drawable/progress"
+            android:rotation="270"
+            android:thumb="@drawable/my" />
+			
+    </RelativeLayout>
+
+</LinearLayout>

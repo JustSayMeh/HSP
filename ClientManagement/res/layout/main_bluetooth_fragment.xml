@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#615342"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/adress"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number|textCapSentences" >
+        </EditText>
+    </LinearLayout>
+
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp" >
+
+        <Customs.CustomSeekBar
+            android:id="@+id/rule"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:progressDrawable="@drawable/progress"
+            android:thumb="@drawable/my" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp" >
+
+            <RadioButton
+                android:id="@+id/threeB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:button="@drawable/radio_button"
+                android:paddingLeft="5dp"
+                android:text="@string/ThredSpeed"
+                android:textColor="@color/color" />
+
+            <RadioButton
+                android:id="@+id/secondB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:button="@drawable/radio_button"
+                android:paddingLeft="5dp"
+                android:text="@string/SecondSpeed"
+                android:textColor="@color/color" />
+
+            <RadioButton
+                android:id="@+id/firstB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:button="@drawable/radio_button"
+                android:paddingLeft="5dp"
+                android:text="@string/FirstSpeed"
+                android:textColor="@color/color" />
+        </RadioGroup>
+
+        <Customs.CustomSeekBar
+            android:id="@+id/speed"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rule"
+            android:layout_alignRight="@+id/rg"
+            android:layout_marginRight="24dp"
+            android:progressDrawable="@drawable/progress"
+            android:rotation="270"
+            android:thumb="@drawable/my" />
+
+    </RelativeLayout>
+
+</LinearLayout>

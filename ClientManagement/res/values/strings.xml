@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ClientManagement</string>
+    <string name="action_settings">Настройки</string>
+    <string name="CheckBox">Дефолтный адрес</string>
+    <string name="connected">Подключиться</string>
+    <string name="Unconnected">Отключение</string>
+    <string name="FirstSpeed">Первая</string>
+    <string name="SecondSpeed">Вторая</string>
+    <string name="ThredSpeed">Третья</string>
+    <string name="BluetoothAdress">Адрес : </string>
+    <string name="BluetoothName">Имя : </string>
+    <string name="add">Добавить девайс</string>
+    <string name="label">Адрес девайса : </string>
+    <string name="alertTitle">Новый девайс</string>
+    <string name="hintIp">введи ip-адрес</string>
+    <string name="hintKey">введи ключ</string>
+    <string name="Empty">Пусто</string>
+    <string name="On">Вкл</string>
+    <string name="Off">Выкл</string>
+    <string name="Save">Сохранить</string>
+    <string name="hintdefaultAdress">Введите адрес</string>
+    <string name="hintdefaultPort">Введите порт</string>
+    <string name="hintdefaultTimeout">Введите таймаут</string>
+
+</resources>

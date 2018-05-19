@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.clientmanagement"
+    android:versionCode="1"
+    android:versionName="1.2" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19"
+        android:maxSdkVersion="25" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <fragment
+            android:name=".WIFIActivity"
+            android:screenOrientation="landscape" >
+        </fragment>
+        <fragment
+            android:name=".BlueToothList"
+            android:screenOrientation="landscape" >
+        </fragment>
+        <fragment
+            android:name=".DrawerListFragment"
+            android:screenOrientation="landscape" >
+        </fragment>
+        <fragment
+            android:name=".BlueToothFragment"
+            android:screenOrientation="landscape" >
+        </fragment>
+
+        <service android:name="model.ServiceServers" />
+
+        <receiver android:name="model.NotificationWorker" >
+            <intent-filter>
+                <action android:name="AchOn" />
+            </intent-filter>
+              <intent-filter>
+                <action android:name="AchOff" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
